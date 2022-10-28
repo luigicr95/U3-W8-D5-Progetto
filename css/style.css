@@ -24,3 +24,10 @@ button {
   width: 70px;
   height: 30px;
 }
+
+#more-buttons,
+#more-buttons-iphone,
+#more-buttons-nothing {
+  display: flex;
+  gap: 1rem;
+}
