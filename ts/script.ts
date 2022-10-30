@@ -167,6 +167,20 @@ bottoneAzzera?.addEventListener("click", function () {
   firstUser.azzeraChiamate();
 });
 
+// FUNZIONE PER TIMER DA RIUSCIRE A IMPLEMENTARE CORRETTAMENTE
+
+let onCall: boolean = false;
+let start = Date.now();
+let output: number;
+
+setInterval(function () {
+  if ((onCall = false)) {
+    onCall = true;
+    let delta = Date.now() - start;
+    output = Math.floor(delta / 1000);
+  }
+}, 1000);
+
 // TELEFONO IPHONE E RELATIVE DICHIARAZIONI
 
 class Iphone extends SmartPhone {
